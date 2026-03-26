@@ -9,7 +9,7 @@
     "rating": 98,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "price": "$200,000"
+    "price": 200000
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "rating": 96,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "None",
-    "price": "$180,000"
+    "price": 180000
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "rating": 97,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Off-spin",
-    "price": "$175,000"
+    "price": 175000
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "rating": 97,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Leg-spin",
-    "price": "$175,000"
+    "price": 175000
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "rating": 96,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Off-spin",
-    "price": "$170,000"
+    "price": 170000
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "rating": 95,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "price": "$185,000"
+    "price": 185000
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "rating": 97,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm orthodox",
-    "price": "$190,000"
+    "price": 190000
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "rating": 92,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
-    "price": "$150,000"
+    "price": 150000
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "rating": 94,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm fast",
-    "price": "$160,000"
+    "price": 160000
   },
   {
     "id": 10,
@@ -117,9 +117,8 @@
     "rating": 97,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "price": "$180,000"
+    "price": 180000
   },
-
   {
     "id": 11,
     "name": "Trent Boult",
@@ -130,7 +129,7 @@
     "rating": 93,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Left-arm fast",
-    "price": "$150,000"
+    "price": 150000
   },
   {
     "id": 12,
@@ -142,7 +141,7 @@
     "rating": 96,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Leg-spin",
-    "price": "$175,000"
+    "price": 170000
   },
   {
     "id": 13,
@@ -154,7 +153,7 @@
     "rating": 95,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "None",
-    "price": "$165,000"
+    "price": 165000
   },
   {
     "id": 14,
@@ -166,7 +165,7 @@
     "rating": 93,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "None",
-    "price": "$150,000"
+    "price": 150000
   },
   {
     "id": 15,
@@ -178,7 +177,7 @@
     "rating": 94,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "None",
-    "price": "$160,000"
+    "price": 160000
   },
   {
     "id": 16,
@@ -190,7 +189,7 @@
     "rating": 92,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "None",
-    "price": "$140,000"
+    "price": 140000
   },
   {
     "id": 17,
@@ -202,7 +201,7 @@
     "rating": 96,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Off-spin",
-    "price": "$170,000"
+    "price": 175000
   },
   {
     "id": 18,
@@ -214,7 +213,7 @@
     "rating": 91,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "None",
-    "price": "$140,000"
+    "price": 140000
   },
   {
     "id": 19,
@@ -226,7 +225,7 @@
     "rating": 95,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm fast",
-    "price": "$165,000"
+    "price": 165000
   },
   {
     "id": 20,
@@ -238,7 +237,7 @@
     "rating": 94,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "price": "$160,000"
+    "price": 160000
   },
   {
     "id": 21,
@@ -250,7 +249,7 @@
     "rating": 93,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Off-spin",
-    "price": "$155,000"
+    "price": 155000
   },
   {
     "id": 22,
@@ -262,7 +261,7 @@
     "rating": 92,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "price": "$150,000"
+    "price": 150000
   },
   {
     "id": 23,
@@ -274,7 +273,7 @@
     "rating": 99,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Off-spin",
-    "price": "$200,000"
+    "price": 200000
   },
   {
     "id": 24,
@@ -286,7 +285,7 @@
     "rating": 99,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm fast",
-    "price": "$200,000"
+    "price": 200000
   },
   {
     "id": 25,
@@ -298,9 +297,8 @@
     "rating": 99,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
-    "price": "$200,000"
+    "price": 200000
   },
-  
   {
     "id": 26,
     "name": "AB de Villiers",
@@ -311,6 +309,6 @@
     "rating": 98,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "price": "$195,000"
+    "price": 195000
   }
 ]

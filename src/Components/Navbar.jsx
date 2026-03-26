@@ -3,7 +3,7 @@ import Dollar from '../assets/dollar.png'
 import LogoNavbar from '../assets/logo.png'
 import BgShadow from '../assets/bg-shadow.png'
 
-const Navbar = () => {
+const Navbar = ({dollar}) => {
     return (
         <header>
             
@@ -12,14 +12,14 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
 
                     <div className="flex-1">
-                        <a className=""><img src={LogoNavbar} alt="" /></a>
+                        <a className=""><img src={LogoNavbar} alt="Brand Logo" /></a>
                     </div>
 
                     <div className="flex-none">
 
-                        <button className="flex justify-between items-center gap-1 ">
-                            0 Dollar
-                            <img src={Dollar} alt="" />
+                        <button className="flex justify-between items-center gap-1 font-bold text-xl">
+                            $ {dollar} Dollar
+                            <img src={Dollar} alt="Dollar icon" />
                         </button>
 
                     </div>
