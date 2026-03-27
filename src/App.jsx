@@ -3,6 +3,7 @@ import { Suspense, useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar'
 import PlayersCard from './Components/PlayersCard/PlayersCard'
+import Footer from './Components/FooterSection/Footer'
 
 
 
@@ -10,7 +11,7 @@ const PlayersPromise = fetch('PlayerData.json').then( res => res.json())
 
 
 function App() {
-  const [dollar, setDollar] = useState(2500000);
+  const [dollar, setDollar] = useState(200000);
 
   return (
     <>
@@ -29,9 +30,12 @@ function App() {
           </Suspense>
 
         </main>
+        
 
       </div>
-
+      <footer>
+        <Footer></Footer>
+      </footer>
     </>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdDeleteForever } from 'react-icons/md';
 
-const SelectedPlayers = ({selectedPlayers, setSelectedPlayers}) => {
+const SelectedPlayers = ({selectedPlayers, setSelectedPlayers, setDollar, dollar}) => {
 
     console.log(selectedPlayers, "selectedPlayers")
 
@@ -17,11 +17,16 @@ const SelectedPlayers = ({selectedPlayers, setSelectedPlayers}) => {
 
         console.log(filteredPlayers, "filteredPlayers")
         setSelectedPlayers(filteredPlayers)
+        setDollar(dollar + playerData.price)
     }
     return (
         <div>
-            {
-                selectedPlayers.map((playerData) =>{
+            { selectedPlayers.length === 0 ? 
+                <div className='flex flex-col items-center font-medium gap-3 text-4xl'>
+                    <h3>No players Selected yet</h3>
+                    <p>Go to Available tab to select Players</p>
+                </div>
+                :selectedPlayers.map((playerData) =>{
                     return <div className='flex justify-between items-center border p-4 my-6'> 
                         <div className='flex items-center gap-4'>
                             <img className='w-20' src={playerData.image} alt="" />

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FaUserAlt } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const AvailablePlayers = ({playerData, setDollar, dollar, setSelectedPlayers, selectedPlayers}) => {
 
@@ -11,7 +13,7 @@ const AvailablePlayers = ({playerData, setDollar, dollar, setSelectedPlayers, se
         if(newDollar >= 0){
             setDollar(dollar - playerData.price)
         }else{
-            alert("Not enough Dollar to purchase this Player")
+            toast("Not enough Dollar to purchase this Player!")
             return;
         }
 
@@ -23,9 +25,15 @@ const AvailablePlayers = ({playerData, setDollar, dollar, setSelectedPlayers, se
 
     return (
         <div className=' border rounded-2xl p-4 w-80'>
+            
+            <span><img className='rounded-2xl' src={image} alt="Player image" /></span>
+            <div className='flex items-center font-bold text-2xl pt-3 gap-2'>
+                
+                <FaUserAlt></FaUserAlt>
+                <h3 className=''>{name}</h3>
 
-            <img className='rounded-2xl' src={image} alt="Player image" />
-            <h3 className='font-bold text-xl pt-3'> {name}</h3>
+            </div>
+            
             
             <div className='py-4'>
 
@@ -35,7 +43,7 @@ const AvailablePlayers = ({playerData, setDollar, dollar, setSelectedPlayers, se
                         <h5>{country}</h5>
                     </div>
 
-                    <h4>{role}</h4>
+                    <h4 className=' rounded-xl py-1 px-3 bg-[#f2f1f1]'>{role}</h4>
 
                 </div>
 

@@ -13,7 +13,7 @@ const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
 
     return (
         <div>
-            <div className='flex justify-between pb-10'>
+            <div className='flex justify-between pb-6'>
 
                 {selectedType === "available" ? 
                 <h4 className='font-bold text-2xl'>Available Players ( {Players.length} )</h4> 
@@ -58,7 +58,7 @@ const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
 
                 :
 
-                <SelectedPlayers selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers}></SelectedPlayers>
+                <SelectedPlayers selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} setDollar={setDollar} dollar={dollar}></SelectedPlayers>
 
             }
                 
