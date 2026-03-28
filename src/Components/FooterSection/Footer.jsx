@@ -9,9 +9,9 @@ const Footer = () => {
         <footer className='bg-[#06091A] mt-80'>
 
             <div className='max-w-330 m-auto'>
-                <div className='border g'>
+                <div className='border rounded-2xl border-white p-'>
                     <div 
-                        className='bg-white py-22 flex flex-col items-center' 
+                        className='bg-white rounded-2xl py-22 m-6 flex flex-col items-center gap-4' 
                         style={{backgroundImage: `url(${BgShadow})`}}
                         >
                         <h1 className='font-bold text-4xl'>Subscribe to our Newsletter</h1>
@@ -31,46 +31,59 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='text-white flex flex-col items-center'>
-                    <div>
+                <div className='text-white  mt-9'>
+
+                    <div className='flex flex-col items-center'>
                         <img src={LogoFooter} alt="" />
                     </div>
-                    <div className='flex '>
 
-                        <div>
-                            <h4>About Us</h4>
+                    <div className='flex justify-between my-17 sm:gap-8'>
+
+                        <div className='max-w-50 '>
+                            <h4 className='font-semibold text-xl mb-4'>About Us</h4>
                             <p>We are a passionate team dedicated to providing the best services to our customers.</p>
 
                         </div>
 
-                        <div>
+                        <div className='flex flex-col items-center'>
 
-                            <h4>Quick Links</h4>
-
-                            <li>Home</li>
-                            <li>Fixture</li>
-                            <li>Teams</li>
-                            <li>Schedules</li>
-
-                        </div>
-
-                        <div>
-
-                            <h4>Subscribe</h4>
-                            <p>Subscribe to our newsletter for the latest updates.</p>
+                            <h4 className='font-semibold text-xl mb-4'>Quick Links</h4>
 
                             <div>
-                                <input type="email" name='email' placeholder='Enter your email' />
-                                <button>Subscribe</button>
+                                <li>Home</li>
+                                <li>Fixture</li>
+                                <li>Teams</li>
+                                <li>Schedules</li>
                             </div>
+
                         </div>
+
+                        <div className='max-w-70 '>
+
+                            <h4 className='font-semibold text-xl mb-4'>Subscribe</h4>
+                            <p className='pb-5'>Subscribe to our newsletter for the latest updates.</p>
+
+                            <div className='flex '>
+                                <input 
+                                    className='border py-2 px-5 rounded-tl-2xl rounded-bl-2xl '
+                                    type="email" name='email' placeholder='Enter your email' 
+                                />
+                                <button className='border py-2 px-5 rounded-tr-2xl rounded-br-2xl font-bold'>Subscribe</button>
+
+                            </div>
+
+                        </div>
+
                     </div>
+
                 </div>
 
             </div>
 
-            <div className='text-white flex flex-col items-center'>
-                <p>@2024 Your Company All Rights Reserved.</p>
+            <div className='text-white flex flex-col items-center border border-black border-t-white'>
+
+                <p className='my-8 '>@2024 Your Company All Rights Reserved.</p>
+
             </div>
 
         </footer>
