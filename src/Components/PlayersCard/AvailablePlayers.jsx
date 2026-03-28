@@ -9,6 +9,13 @@ const AvailablePlayers = ({playerData, setDollar, dollar, setSelectedPlayers, se
 
     const handleChoosePlayer = ()=>{
 
+        const exists = selectedPlayers.find(p => p.id === playerData.id);
+
+        if (exists) {
+            toast.warning("Player already selected!");
+            return;
+        }
+
         let newDollar =dollar  - playerData.price;
         if(newDollar >= 0){
             setDollar(dollar - playerData.price)
@@ -17,16 +24,16 @@ const AvailablePlayers = ({playerData, setDollar, dollar, setSelectedPlayers, se
             return;
         }
 
-        alert( `${playerData.name} is selected`)
+        toast.success( `${playerData.name} is selected`)
         setIsSelected(true)
         setSelectedPlayers([...selectedPlayers, playerData])
 
     }
 
     return (
-        <div className=' border rounded-2xl p-4 w-80'>
+        <div className=' border rounded-2xl p-5 max-w-90 mb-10'>
             
-            <span><img className='rounded-2xl' src={image} alt="Player image" /></span>
+            <img className='w-full h-70 rounded-2xl' src={image} alt="Player image" />
             <div className='flex items-center font-bold text-2xl pt-3 gap-2'>
                 
                 <FaUserAlt></FaUserAlt>
@@ -64,7 +71,7 @@ const AvailablePlayers = ({playerData, setDollar, dollar, setSelectedPlayers, se
 
             <div className='flex justify-between items-center gap-6'>
 
-                <h2 className='font-semibold'>Price: ${price}</h2>
+                <h2 className='font-semibold text-xl'>Price: ${price}</h2>
 
                 <button 
                     className={`font-semibold border rounded-xl ${isSelected ? "":"hover:bg-amber-200"} cursor-pointer px-3 py-1 `}

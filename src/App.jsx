@@ -11,7 +11,7 @@ const PlayersPromise = fetch('PlayerData.json').then( res => res.json())
 
 
 function App() {
-  const [dollar, setDollar] = useState(200000);
+  const [dollar, setDollar] = useState(2500000);
 
   return (
     <>

@@ -12,7 +12,7 @@ const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
     const [selectedPlayers, setSelectedPlayers] = useState([]);
 
     return (
-        <div>
+        <div className=''>
             <div className='flex justify-between pb-6'>
 
                 {selectedType === "available" ? 
@@ -24,8 +24,8 @@ const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
                     <button 
 
                         onClick={() => setSelectedType("available")}
-                        className={` ${selectedType === "available" ? "bg-green-400" : ""} 
-                        font-semibold border rounded-xl  cursor-pointer m-3 px-4 py-2`}
+                        className={` ${selectedType === "available" ? "bg-gradient-to-r from-pink-400 to-yellow-400 text-black" : ""} 
+                        font-semibold text-xl bg-[#dbd9d9] rounded-xl  cursor-pointer mr-5 px-8 py-3 shadow-2xl`}
 
                         >
 
@@ -35,8 +35,8 @@ const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
 
                     <button 
                         onClick={() => setSelectedType("selected")}
-                        className={` ${selectedType === "selected" ? "bg-green-400" : ""} 
-                        font-semibold border rounded-xl  cursor-pointer px-4 py-2 `}
+                        className={` ${selectedType === "selected" ? "bg-gradient-to-r from-pink-400 to-yellow-400 text-black" : ""} 
+                        font-semibold text-xl rounded-xl  cursor-pointer px-6 py-3 bg-[#dbd9d9] `}
 
                         >
                         
@@ -49,7 +49,7 @@ const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
 
             
             {selectedType === "available" ? 
-                <div className='flex flex-wrap justify-between  gap-5'>
+                <div className='grid lg:grid-cols-3 md:grid-cols-2  gap-5'>
                     {
                     Players.map(playerData =><AvailablePlayers key={playerData.id} playerData={playerData} setDollar={setDollar} dollar={dollar} selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers}></AvailablePlayers> )
                     }

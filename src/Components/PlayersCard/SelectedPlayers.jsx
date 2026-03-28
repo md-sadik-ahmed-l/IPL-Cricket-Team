@@ -27,15 +27,15 @@ const SelectedPlayers = ({selectedPlayers, setSelectedPlayers, setDollar, dollar
                     <p>Go to Available tab to select Players</p>
                 </div>
                 :selectedPlayers.map((playerData) =>{
-                    return <div className='flex justify-between items-center border p-4 my-6'> 
+                    return <div className='flex justify-between items-center border rounded-2xl p-4 my-6'> 
                         <div className='flex items-center gap-4'>
-                            <img className='w-20' src={playerData.image} alt="" />
-                            <div >
-                                <h1 className='font-bold text-xl'>{playerData.name}</h1>
+                            <img className='w-25 rounded-2xl ' src={playerData.image} alt="Player image" />
+                            <div className=''>
+                                <h1 className='font-bold text-2xl pb-3'>{playerData.name}</h1>
                                 <p className='font-semibold '>{playerData.role}</p>
                             </div>
                         </div>
-                        <button onClick={()=> handleDeleteSelectedPlayer(playerData)} className='border p-4 bg-red-200 rounded-xl text-4xl  '>
+                        <button onClick={()=> handleDeleteSelectedPlayer(playerData)} className=' p-3 bg-[#c2b9b6] rounded-xl text-4xl  '>
                             <MdDeleteForever></MdDeleteForever>
                         </button>
                     </div>

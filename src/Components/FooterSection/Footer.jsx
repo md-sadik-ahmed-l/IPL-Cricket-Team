@@ -6,13 +6,13 @@ const Footer = () => {
 
     return (
 
-        <footer className='bg-[#06091A] mt-80'>
+        <footer className='bg-[#06091A] mt-60 relative'>
 
             <div className='max-w-330 m-auto'>
-                <div className='border rounded-2xl border-white p-'>
+                <div className='border rounded-2xl border-white  absolute left-1/2 -translate-x-1/2 -top-50 w-full max-w-5xl'>
                     <div 
-                        className='bg-white rounded-2xl py-22 m-6 flex flex-col items-center gap-4' 
-                        style={{backgroundImage: `url(${BgShadow})`}}
+                        className='bg-white rounded-2xl py-22 m-6 flex flex-col items-center gap-4 bg-gradient-to-r from-pink-200 via-yellow-100 to-orange-200' 
+                        
                         >
                         <h1 className='font-bold text-4xl'>Subscribe to our Newsletter</h1>
 
@@ -25,13 +25,13 @@ const Footer = () => {
                                 type="email" name='email' placeholder='Enter your email' 
                             />
 
-                            <button className='font-bold border py-2 px-5 rounded-xl '>Subscribe</button>
+                            <button className='font-bold  py-2 px-5 rounded-xl  bg-gradient-to-r from-pink-500 to-yellow-400 text-black'>Subscribe</button>
 
                         </div>
                     </div>
                 </div>
 
-                <div className='text-white  mt-9'>
+                <div className='text-white  mt-9 pt-55'>
 
                     <div className='flex flex-col items-center'>
                         <img src={LogoFooter} alt="" />
@@ -39,7 +39,7 @@ const Footer = () => {
 
                     <div className='flex justify-between my-17 sm:gap-8'>
 
-                        <div className='max-w-50 '>
+                        <div className=' max-w-50 '>
                             <h4 className='font-semibold text-xl mb-4'>About Us</h4>
                             <p>We are a passionate team dedicated to providing the best services to our customers.</p>
 
@@ -68,7 +68,7 @@ const Footer = () => {
                                     className='border py-2 px-5 rounded-tl-2xl rounded-bl-2xl '
                                     type="email" name='email' placeholder='Enter your email' 
                                 />
-                                <button className='border py-2 px-5 rounded-tr-2xl rounded-br-2xl font-bold'>Subscribe</button>
+                                <button className='border py-3 px-5 rounded-tr-2xl rounded-br-2xl font-bold bg-gradient-to-r from-pink-400 to-yellow-400 text-black'>Subscribe</button>
 
                             </div>
 
