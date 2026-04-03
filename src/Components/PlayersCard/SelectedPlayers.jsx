@@ -22,9 +22,9 @@ const SelectedPlayers = ({selectedPlayers, setSelectedPlayers, setDollar, dollar
     return (
         <div>
             { selectedPlayers.length === 0 ? 
-                <div className='flex flex-col items-center font-medium gap-3 text-4xl'>
-                    <h3>No players Selected yet</h3>
-                    <p>Go to Available tab to select Players</p>
+                <div className='flex flex-col items-center  gap-3 mt-10 '>
+                    <h3 className='font-medium text-2xl sm:text-4xl'>No players Selected yet</h3>
+                    <p className='font-medium text-xl sm:text-3xl'>Go to Available tab to select Players</p>
                 </div>
                 :selectedPlayers.map((playerData) =>{
                     return <div className='flex justify-between items-center border rounded-2xl p-4 my-6'> 

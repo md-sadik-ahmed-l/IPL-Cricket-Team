@@ -9,19 +9,19 @@ const Footer = () => {
         <footer className='bg-[#06091A] mt-60 relative'>
 
             <div className='max-w-330 m-auto'>
-                <div className='border rounded-2xl border-white  absolute left-1/2 -translate-x-1/2 -top-50 w-full max-w-5xl'>
+                <div className='border rounded-2xl m-2 border-white  absolute left-1/2 -translate-x-1/2 -top-50 w-full max-w-5xl'>
                     <div 
-                        className='bg-white rounded-2xl py-22 m-6 flex flex-col items-center gap-4 bg-gradient-to-r from-pink-200 via-yellow-100 to-orange-200' 
+                        className='bg-white rounded-2xl py-11 sm:py-22 m-3 sm:m-6 p-2 flex flex-col items-center justify-center gap-4 bg-gradient-to-r from-pink-200 via-yellow-100 to-orange-200' 
                         
                         >
-                        <h1 className='font-bold text-4xl'>Subscribe to our Newsletter</h1>
+                        <h1 className='font-bold text-2xl sm:text-4xl'>Subscribe to our Newsletter</h1>
 
-                        <p className='font-medium text-2xl'>Get the latest updates and news right in your inbox!</p>
+                        <p className='font-medium text-[16px] sm:text-2xl'>Get the latest updates and news right in your inbox!</p>
 
                         <div className=''>
 
                             <input 
-                                className='border py-2 px-5 rounded-xl mr-4'
+                                className='border py-2 px-5 rounded-xl mr-4 mb-4'
                                 type="email" name='email' placeholder='Enter your email' 
                             />
 

@@ -14,14 +14,14 @@ const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
     return (
         <div className=''>
 
-            <div className='flex justify-between pb-6'>
+            <div className='flex flex-wrap mx-3 justify-between pb-6'>
 
                 {selectedType === "available" ? 
                 <h4 className='font-bold text-2xl'>Available Players ( {Players.length} )</h4> 
                 : 
                 <h4 className='font-bold text-2xl'>Selected Players ( { selectedPlayers.length }/{Players.length} ) </h4>}
 
-                <div className=''>
+                <div className='mt-4'>
 
                     <button 
 
@@ -39,7 +39,7 @@ const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
 
                         onClick={() => setSelectedType("selected")}
                         className={` ${selectedType === "selected" ? "bg-gradient-to-r from-pink-400 to-yellow-400 text-black" : ""} 
-                        font-semibold text-xl rounded-xl  cursor-pointer px-6 py-3 bg-[#dbd9d9] `}
+                        font-semibold text-xl rounded-xl  cursor-pointer px-6 py-3 bg-[#dbd9d9] mt-4 sm:mt-0`}
 
                         >
                         Selected( {selectedPlayers.length} )

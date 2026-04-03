@@ -45,11 +45,11 @@ const Navbar = ({dollar}) => {
                 {/* <span className=''> <img className='rounded-3xl' src={BgShadow} alt="" /></span> */}
                 <div className='flex flex-col items-center gap-6'>
 
-                    <img src={BannerImage} alt="BannerImage" />
+                    <img className='w-30 sm:w-55' src={BannerImage} alt="BannerImage" />
 
-                    <h3 className='font-semibold text-4xl text-white'>Assemble Your Ultimate Dream 11 Cricket Team</h3>
+                    <h3 className='font-semibold text-2xl md:text-4xl sm:text-3xl text-white'>Assemble Your Ultimate Dream 11 Cricket Team</h3>
                     
-                    <p className='font-medium text-2xl text-[#c9c6c6]'>Beyond Boundaries Beyond Limits</p>
+                    <p className='font-medium text-[16px] sm:text-2xl text-[#c9c6c6]'>Beyond Boundaries Beyond Limits</p>
 
                     <button className='font-bold py-3 px-5 rounded-2xl bg-[#E7FE29]'>Claim Free Credit</button>
 

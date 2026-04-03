@@ -32,7 +32,7 @@ const AvailablePlayers = ({playerData, setDollar, dollar, setSelectedPlayers, se
     }
 
     return (
-        <div className=' border rounded-2xl p-5 max-w-90 mb-10'>
+        <div className=' border rounded-2xl p-5 m-4 max-w-90 mb-10'>
             
             <img className='w-full h-70 rounded-2xl' src={image} alt="Player image" />
             <div className='flex items-center font-bold text-2xl pt-3 gap-2'>
