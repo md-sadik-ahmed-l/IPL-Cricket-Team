@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 const AvailablePlayers = ({playerData, setDollar, dollar, setSelectedPlayers, selectedPlayers}) => {
 
     const { image, name, flag, country, role, rating, battingStyle, bowlingStyle, price } =playerData;
+
     const [isSelected, setIsSelected] = useState(false);
 
     const handleChoosePlayer = ()=>{
@@ -75,11 +76,17 @@ const AvailablePlayers = ({playerData, setDollar, dollar, setSelectedPlayers, se
 
                 <button 
                     className={`font-semibold border rounded-xl ${isSelected ? "":"hover:bg-amber-200"} cursor-pointer px-3 py-1 `}
+
                     onClick={handleChoosePlayer}
                     disabled={isSelected}
                     // disabled = {isSelected ? true : false}
-                >
-                    {isSelected ? "selected": "Choose Player"}</button>
+
+                    >
+
+                    {isSelected ? "selected": "Choose Player"}
+
+                </button>
+
             </div>
 
         </div>

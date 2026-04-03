@@ -6,9 +6,9 @@ import BannerImage from '../assets/banner-main.png'
 
 const Navbar = ({dollar}) => {
     return (
-        <header >
+        <header className=''>
             
-            <nav className='flex justify-between items-center my-7'>
+            <nav className='flex justify-between items-center my-7 sticky top-0 z-50 bg-white'>
 
                 <div className=" ">
                     <a className=""><img className='w-22' src={LogoNavbar} alt="Brand Logo" /></a>

@@ -5,7 +5,7 @@ import SelectedPlayers from './SelectedPlayers';
 const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
 
     const Players = use(PlayersPromise)
-    // const {id} =playerData;
+    // const {id} =playerData; 
 
     const [selectedType, setSelectedType] = useState("available");
 
@@ -13,6 +13,7 @@ const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
 
     return (
         <div className=''>
+
             <div className='flex justify-between pb-6'>
 
                 {selectedType === "available" ? 
@@ -21,6 +22,7 @@ const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
                 <h4 className='font-bold text-2xl'>Selected Players ( { selectedPlayers.length }/{Players.length} ) </h4>}
 
                 <div className=''>
+
                     <button 
 
                         onClick={() => setSelectedType("available")}
@@ -34,13 +36,14 @@ const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
 
 
                     <button 
+
                         onClick={() => setSelectedType("selected")}
                         className={` ${selectedType === "selected" ? "bg-gradient-to-r from-pink-400 to-yellow-400 text-black" : ""} 
                         font-semibold text-xl rounded-xl  cursor-pointer px-6 py-3 bg-[#dbd9d9] `}
 
                         >
-                        
                         Selected( {selectedPlayers.length} )
+
                     </button>
 
                 </div>
@@ -49,16 +52,43 @@ const PlayersCard = ({PlayersPromise, setDollar, dollar}) => {
 
             
             {selectedType === "available" ? 
+
                 <div className='grid lg:grid-cols-3 md:grid-cols-2  gap-5'>
+
                     {
-                    Players.map(playerData =><AvailablePlayers key={playerData.id} playerData={playerData} setDollar={setDollar} dollar={dollar} selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers}></AvailablePlayers> )
+                    Players.map(playerData =>
+                        
+                    <AvailablePlayers 
+
+                        key={playerData.id} 
+                        playerData={playerData} 
+
+                        dollar={dollar}
+                        setDollar={setDollar} 
+                         
+                        selectedPlayers={selectedPlayers} 
+                        setSelectedPlayers={setSelectedPlayers}
+                    
+                    >
+
+                    </AvailablePlayers> )
                     }
                     
                 </div>
 
                 :
 
-                <SelectedPlayers selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} setDollar={setDollar} dollar={dollar}></SelectedPlayers>
+                <SelectedPlayers 
+
+                    selectedPlayers={selectedPlayers} 
+                    setSelectedPlayers={setSelectedPlayers} 
+                    
+                    setDollar={setDollar} 
+                    dollar={dollar}
+
+                >
+
+                </SelectedPlayers>
 
             }
                 

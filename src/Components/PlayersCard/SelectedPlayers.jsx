@@ -38,6 +38,7 @@ const SelectedPlayers = ({selectedPlayers, setSelectedPlayers, setDollar, dollar
                         <button onClick={()=> handleDeleteSelectedPlayer(playerData)} className=' p-3 bg-[#c2b9b6] rounded-xl text-4xl  '>
                             <MdDeleteForever></MdDeleteForever>
                         </button>
+
                     </div>
                     
 
