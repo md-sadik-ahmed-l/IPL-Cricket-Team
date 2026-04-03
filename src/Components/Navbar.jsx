@@ -16,7 +16,7 @@ const Navbar = ({dollar}) => {
 
                 <div className=''>
                     
-                    <ul className='flex gap-5 sm:gap-10 font-medium text-xl'>
+                    <ul className=' hidden md:flex gap-5 sm:gap-10 font-medium text-xl'>
                         <li>Home</li>
                         <li>Fixture</li>
                         <li>Teams</li>

@@ -37,7 +37,7 @@ const Footer = () => {
                         <img src={LogoFooter} alt="" />
                     </div>
 
-                    <div className='flex justify-between my-17 sm:gap-8'>
+                    <div className='flex flex-wrap justify-between my-17 sm:gap-8'>
 
                         <div className=' max-w-50 '>
                             <h4 className='font-semibold text-xl mb-4'>About Us</h4>
